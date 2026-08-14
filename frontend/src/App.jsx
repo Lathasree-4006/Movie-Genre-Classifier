@@ -41,7 +41,7 @@ function App() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:5000/predict",
+        "https://movie-genre-classifier-0e3r.onrender.com/predict",
         {
           method: "POST",
 
@@ -54,8 +54,7 @@ function App() {
           })
         }
       );
-
-
+      
       const data = await response.json();
 
 
@@ -576,7 +575,7 @@ function App() {
 
           <p>
 
-            GenreAI is a Natural Language Processing
+            Genre Sense is a Natural Language Processing
             project that classifies movies based on
             their plot descriptions.
 
